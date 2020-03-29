@@ -12,7 +12,7 @@ class EmailAddressParser
   
   def parse
     parsed_emails = []
-    email_addresses.split(",").collect do |i|
+    email_addresses.split(" ,").collect do |i|
       parsed_emails << i 
     end
     parsed_emails
